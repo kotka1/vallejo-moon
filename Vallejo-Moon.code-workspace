@@ -1,0 +1,57 @@
+{
+  "folders": [
+    {
+      "name": "Vallejo Moon",
+      "path": "."
+    },
+    {
+      "name": "content",
+      "path": "content"
+    },
+    {
+      "name": "editorial",
+      "path": "editorial"
+    },
+    {
+      "name": "brand",
+      "path": "brand"
+    },
+    {
+      "name": "docs",
+      "path": "docs"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.tools": true,
+      "**/.vercel": true
+    },
+    "search.exclude": {
+      "**/.tools": true,
+      "**/.git": true,
+      "**/.vercel": true
+    },
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "[markdown]": {
+      "editor.wordWrap": "on"
+    },
+    "terminal.integrated.env.osx": {
+      "HTTP_PROXY": "",
+      "HTTPS_PROXY": "",
+      "http_proxy": "",
+      "https_proxy": "",
+      "ALL_PROXY": "",
+      "all_proxy": "",
+      "NO_PROXY": "*",
+      "no_proxy": "*"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "davidanson.vscode-markdownlint"
+    ]
+  }
+}

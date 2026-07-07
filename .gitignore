@@ -1,0 +1,6 @@
+.DS_Store
+.tools/
+.env
+.vercel
+.deploy-output.log
+.deploy-exit-code

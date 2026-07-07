@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy: Vallejo Moon (Vercel)",
+      "type": "shell",
+      "command": "./deploy.sh",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "HTTP_PROXY": "",
+          "HTTPS_PROXY": "",
+          "http_proxy": "",
+          "https_proxy": "",
+          "ALL_PROXY": "",
+          "all_proxy": "",
+          "GIT_HTTP_PROXY": "",
+          "GIT_HTTPS_PROXY": "",
+          "SOCKS_PROXY": "",
+          "SOCKS5_PROXY": "",
+          "NO_PROXY": "*",
+          "no_proxy": "*"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

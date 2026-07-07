@@ -1,0 +1,22 @@
+---
+description: Deploy The Vallejo Moon from Cursor
+globs:
+alwaysApply: false
+---
+
+# Deploy from Cursor
+
+The agent sandbox cannot reach api.vercel.com. Do not run `vercel deploy` or `./deploy.sh` from agent shell commands.
+
+When the user asks to deploy or push live, use one of these:
+
+1. **Recommended — Cursor task (integrated terminal, full network):**
+   Tell the user: `Cmd+Shift+B` or Command Palette → **Tasks: Run Build Task** → runs `./deploy.sh`
+
+2. **Or Command Palette:**
+   **Tasks: Run Task** → **Deploy: Vallejo Moon (Vercel)**
+
+3. **Git push path** (if GitHub Actions is configured):
+   Push to `main` — workflow `.github/workflows/deploy.yml` deploys via GitHub Actions.
+
+Project `.vscode/settings.json` clears Cursor's localhost proxy in the integrated terminal so Vercel API works.

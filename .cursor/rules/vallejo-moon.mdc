@@ -1,0 +1,29 @@
+---
+description: Vallejo Moon — satirical Vallejo newspaper (Mikael + Dwayne)
+alwaysApply: true
+---
+
+# Vallejo Moon
+
+Satirical local newspaper for Vallejo — *illuminating nothing since last Tuesday.* Live: https://vallejomoon.com
+
+Co-founded by **Mikael Hill** (design/digital) and **Dwayne** (editorial).
+
+## Structure
+
+- **`index.html`** + **`css/styles.css`** — the live site (root level, no build step)
+- **`content/articles/`** — future article drafts (Markdown)
+- **`content/drafts/`** — WIP
+- **`editorial/`** — mission, style, team
+- **`brand/`** — logo and visual references
+- **`docs/`** — collaboration workflow
+- **`deploy.sh`** — deploy to Vercel from Cursor (`Cmd+Shift+B`)
+- **`.github/workflows/deploy.yml`** — auto-deploy on push to `main`
+
+## Do not commit
+
+`.tools/`, `.vercel/`, `.env` — already in `.gitignore`
+
+## Deploy
+
+Agent sandbox cannot run Vercel. User deploys via **Tasks: Run Build Task** or `git push` (GitHub Actions).

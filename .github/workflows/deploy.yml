@@ -1,0 +1,22 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: team_4IGcw8j0Qr9nw8Utj3m6ctys
+          VERCEL_PROJECT_ID: prj_A033WaCmi4fGVzFiC3Z0RSEuhVzC
+        run: |
+          unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy ALL_PROXY all_proxy
+          npm install -g vercel@54
+          vercel deploy --prod --yes --token "$VERCEL_TOKEN"
