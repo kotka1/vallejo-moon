@@ -19,7 +19,7 @@ git init
 git add .
 git commit -m "Initial Vallejo Moon workspace"
 git branch -M main
-git remote add origin git@github.com:YOUR_USERNAME/vallejo-moon.git
+git remote add origin https://github.com/kotka1/vallejo-moon.git
 git push -u origin main
 ```
 
@@ -28,7 +28,7 @@ git push -u origin main
 4. Dwayne clones and opens in Cursor:
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/vallejo-moon.git
+git clone https://github.com/kotka1/vallejo-moon.git
 cd vallejo-moon
 # Open Vallejo-Moon.code-workspace in Cursor
 ```
