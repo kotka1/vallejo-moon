@@ -105,11 +105,13 @@
     color:var(--ink-soft);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:14px;
   }
   h1.masthead{
-    font-family:'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    font-weight:700;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;
-    letter-spacing:-.02em;
+    background:#000;
+    margin:14px calc(-1 * var(--page-pad)) 0;
+    padding:22px var(--page-pad);
+    line-height:0;
   }
-  .tagline{font-style:italic;color:var(--ink-soft);font-size:.95rem;margin-top:6px}
+  h1.masthead a{display:block}
+  h1.masthead img{display:block;width:100%;max-width:760px;height:auto;margin:0 auto}
   .price-stamp{
     position:absolute;right:0;top:52px;transform:rotate(6deg);
     border:2px solid var(--stamp);color:var(--stamp);border-radius:4px;
@@ -223,8 +225,11 @@
     <span>Price: One Bridge Toll</span>
   </div>
   <div class="price-stamp">Not The<br>Vallejo Sun</div>
-  <h1 class="masthead">the Vallejo MOON</h1>
-  <p class="tagline">“Illuminating nothing since last Tuesday.”</p>
+  <h1 class="masthead">
+    <a href="/" aria-label="the Vallejo Moon — home">
+      <img src="assets/vallejo-moon-logo.png" alt="the Vallejo Moon — Illuminating nothing since last Tuesday. Est. 2026" width="1024" height="683">
+    </a>
+  </h1>
   <nav aria-label="Sections">
     <a href="#news">News</a><a href="#potholes">Potholes</a><a href="#waterfront">Waterfront Plans</a><a href="#sideshows">Sideshows</a><a href="#ferry">Ferry Watch</a><a href="#horoscopes">Horoscopes</a><a href="#obituaries">Obituaries (Businesses)</a>
   </nav>
