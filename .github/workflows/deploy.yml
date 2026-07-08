@@ -15,7 +15,7 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: team_4IGcw8j0Qr9nw8Utj3m6ctys
-          VERCEL_PROJECT_ID: prj_A033WaCmi4fGVzFiC3Z0RSEuhVzC
+          VERCEL_PROJECT_ID: prj_zUhz6vsUf4P2BYynTBmMThMsmmms
         run: |
           unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy ALL_PROXY all_proxy
           npm install -g vercel@54
